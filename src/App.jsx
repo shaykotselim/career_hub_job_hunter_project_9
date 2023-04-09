@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import Category from './components/home/category/Category'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-        <h1>This App Components</h1>
+        <Category/>
     </div>
   )
 }
