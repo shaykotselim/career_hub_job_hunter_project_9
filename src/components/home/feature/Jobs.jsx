@@ -4,7 +4,7 @@ const Jobs = ({ job }) => {
   console.log(job);
   return (
     <>
-      <div className=" p-8 rounded  shadow-md">
+      <div className=" p-8 rounded shadow-lg lg:shadow-md mt-4">
             <div>
                 <img width={150} src={job.company_logo} alt="" />
             </div>
@@ -16,7 +16,7 @@ const Jobs = ({ job }) => {
                 <p className="border rounded border-blue-600 p-1">{job.is_remote_onsite}</p>
                 <p className="border rounded border-blue-600 p-1">{job.typeof_job}</p>
             </div>
-            <div className="mt-2 flex gap-4 text-gray-600">
+            <div className="mt-2 sm:flex gap-4 text-gray-600">
                 <p className="flex items-center"><ImLocation/>{job.location}</p>
                 <p className="flex items-center"><ImCoinDollar/><span>Salary : {job.salary}</span></p>
             </div>
