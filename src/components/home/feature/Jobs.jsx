@@ -1,5 +1,6 @@
 import React from "react";
 import { ImLocation, ImCoinDollar } from 'react-icons/im';
+import { Link } from "react-router-dom";
 const Jobs = ({ job }) => {
   console.log(job);
   return (
@@ -20,7 +21,9 @@ const Jobs = ({ job }) => {
                 <p className="flex items-center"><ImLocation/>{job.location}</p>
                 <p className="flex items-center"><ImCoinDollar/><span>Salary : {job.salary}</span></p>
             </div>
-            <button className="mt-2 p-2 rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">View Details</button>
+            <Link to="/job_details">
+                <button className="mt-2 p-2 rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">View Details</button>
+            </Link>
       </div>
     </>
   );
