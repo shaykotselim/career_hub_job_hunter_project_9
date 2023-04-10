@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import Category from './components/home/category/Category'
-import Feature from './components/home/feature/Feature'
 import Footer from './components/footer/Footer'
+import Home from './components/home/Home'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-        <Category/>
-        <Feature/>
+        <Home/>
         <Footer/>
     </div>
   )
