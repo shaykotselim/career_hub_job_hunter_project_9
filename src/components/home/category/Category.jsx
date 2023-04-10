@@ -10,13 +10,13 @@ const Category = () => {
   }, []);
   return (
     <>
-      <div className="">
+      <div className="mt-16">
         <p className="text-center text-3xl font-semibold">Job Category List</p>
         <p className="mt-4 text-center text-gray-500">
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className="mt-8 grid grid-cols-4 gap-8 px-36 ">
+        <div className="mt-8 sm:grid sm:grid-cols-4 gap-8 px-4 lg:px-36 ">
           {category.map((items) => (
             <Items key={items.id} items={items} />
           ))}
