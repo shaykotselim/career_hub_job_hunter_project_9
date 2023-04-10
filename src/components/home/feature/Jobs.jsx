@@ -20,7 +20,7 @@ const Jobs = ({ job }) => {
                 <p className="flex items-center"><ImLocation/>{job.location}</p>
                 <p className="flex items-center"><ImCoinDollar/><span>Salary : {job.salary}</span></p>
             </div>
-            <button className="mt-2 bg-blue-600 text-white p-2 rounded hover:bg-orange-600">View Details</button>
+            <button className="mt-2 p-2 rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">View Details</button>
       </div>
     </>
   );
