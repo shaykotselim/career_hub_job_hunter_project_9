@@ -1,9 +1,12 @@
 import React from 'react';
+import AssignmentMarks from './AssignmentMarks';
+import StatisticsBanner from './statisticsBanner';
 
 const Statistics = () => {
     return (
         <div>
-            <h1>This is Statistics</h1>
+            <StatisticsBanner/>
+            <AssignmentMarks/>
         </div>
     );
 };

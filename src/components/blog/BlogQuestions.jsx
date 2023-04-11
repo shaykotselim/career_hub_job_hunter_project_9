@@ -1,5 +1,5 @@
 import { useState, Fragment } from "react";
-import qa from "../../assets/All Images/qa.png"
+import qa from "../../assets/All Images/qa-.jpg"
 import {
   Accordion,
   AccordionHeader,

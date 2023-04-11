@@ -12,6 +12,7 @@ import Statistics from './components/statistics/Statistics';
 import AppliedJobs from './components/appliedJobs/AppliedJobs';
 import Blog from './components/blog/Blog';
 import JobDetails from './components/jobDetails/JobDetails';
+import PageNotFound from './components/pageNotFound/PageNotFound';
 
 const router = createBrowserRouter([
   {
@@ -44,9 +45,15 @@ const router = createBrowserRouter([
         path:"job_details/:jobId",
         element:<JobDetails/>,
         loader: ({ params }) => fetch("/feature.json")
-      }
-    ]
-
+      },
+     {
+      path:"*",
+      element:<PageNotFound/>
+     }
+    ],
+    
+     
+    
   },
 ]);
 
