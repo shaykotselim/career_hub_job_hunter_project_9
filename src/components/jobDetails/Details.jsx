@@ -2,7 +2,10 @@ import React from "react";
 import { ImLocation, ImCoinDollar } from 'react-icons/im';
 import { MdWorkOutline,MdOutlineEmail } from 'react-icons/md';
 import { BiPhone } from 'react-icons/bi';
+import { addToDb } from "../../utilities/fakedb";
+
 const Details = ({ details }) => {
+    
   // console.log(details)
   const {
     job_description,
@@ -14,7 +17,12 @@ const Details = ({ details }) => {
     job_responsibility,
     educational_requirements,
     experiences,
+    id
   } = details;
+  const handleApply= (id)=>{
+      addToDb(id)
+  }
+  
   return (
     <>
       <div className="px-4 lg:px-32 mt-24 sm:grid sm:grid-cols-4 lg:gap-4">
@@ -50,7 +58,7 @@ const Details = ({ details }) => {
                     <p className="flex items-center gap-1 mt-2"><ImLocation/><span className="font-bold">Address:</span>{location}</p>
                 
              </div>
-             <button className="mt-4 py-2 w-full  rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">Apply Now</button>
+             <button onClick={()=>handleApply(id)} className="mt-4 py-2 w-full  rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">Apply Now</button>
         </div>
       </div>
     </>
