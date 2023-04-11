@@ -6,12 +6,13 @@ const Header = () => {
     <div>
       <div className="bg-cyan-50 sm:flex items-center justify-between py-8 lg:px-36">
         <div>
+          <Link to="/home">
           <p className="text-3xl font-medium bg-gradient-to-r from-blue-500 via-pink-500 to-blue-500 inline-block text-transparent bg-clip-text ">
             Job_Hunter
           </p>
+          </Link>
         </div>
         <div className="">
-          <Link to="/home">Home</Link>
           <Link className="ml-8" to="/statistics">
             Statistics
           </Link>
