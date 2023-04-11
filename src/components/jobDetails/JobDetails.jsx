@@ -1,7 +1,15 @@
 import React from 'react';
 import DetailsBanner from './DetailsBanner';
+import { useLoaderData, useParams } from 'react-router-dom';
+import Details from './Details';
 
 const JobDetails = () => {
+    const jobDetail = useLoaderData();
+    const {jobId} = useParams();
+    // console.log(jobDetail)
+    const details = jobDetail.find(items=> items.id == jobId);
+    // console.log(details);
+        
     return (
         <>
            
@@ -9,7 +17,9 @@ const JobDetails = () => {
                  <DetailsBanner/>
             </div>
             <div>
-                 <h1>Details</h1>
+                 <Details
+                    details={details}
+                 />
             </div>
                 
         </>
