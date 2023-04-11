@@ -3,7 +3,7 @@ import bannerimg from '../../../assets/All Images/banner.png'
 const Banner = () => {
     return (
         <>
-            <div className=" sm:flex items-center justify-between bg-sky-50 px-4 lg:px-36">
+            <div className=" sm:flex items-center justify-between bg-cyan-50 px-4 lg:px-36">
                  <div>  
                         <p className="text-4xl font-medium lg:text-6xl">One step </p>
                         <p className="text-4xl font-medium lg:text-6xl">Closer To Your</p>
