@@ -29,7 +29,7 @@ const AppliedJobs = () => {
             {
                 data.map(dt=><div className='lg:px-32 px-4 mt-4'>
                             
-                            <div className="border rounded p-8 sm:flex items-center justify-between">
+                            <div className="border rounded p-8 mb-4 sm:flex items-center justify-between">
                                 <div className='sm:flex items-center gap-4'>
                                     <div>
                                         <img className='bg-cyan-50 rounded p-8 h-32' width={200} src={dt.company_logo} alt="" />

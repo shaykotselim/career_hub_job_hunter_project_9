@@ -9,7 +9,7 @@ const StatisticsBanner = () => {
                         <img className="h-36 absolute right-0 -top-[164px] lg:-top-[104px]" src={vector1} alt="" />
                     </div>
                     <div>
-                        <p className="text-center lg:absolute lg:left-[700px] lg:top-8 text-4xl font-bold ">Assignment Analytics</p>
+                        <p className="text-center lg:absolute lg:left-[600px] lg:top-8 text-4xl font-bold ">Assignment Analytics</p>
                     </div>
                     <div>
                         <img className="h-36" src={vector} alt="" />

@@ -26,12 +26,12 @@ const data = [
   },
   {
     subject: "Assignment-4",
-    A: 58,
+    A: 59,
     fullMark: 60,
   },
   {
     subject: "Assignment-5",
-    A: 59,
+    A: 58,
     fullMark: 60,
   },
   {
@@ -81,7 +81,7 @@ const getIntroOfPage = (label) => {
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
-      <div className="custom-tooltip text-white p-2 rounded font-medium bg-gradient-to-r from-purple-500 to-pink-500 ">
+      <div className="custom-tooltip text-white p-2 rounded   font-medium bg-gradient-to-r from-purple-500 to-pink-500 ">
         <p className="label">{`${label}`}</p>
         <p className="intro">{getIntroOfPage(label)}</p>
       </div>

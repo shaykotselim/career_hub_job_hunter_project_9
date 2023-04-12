@@ -58,7 +58,7 @@ const Details = ({ details }) => {
                     <p className="flex items-center gap-1 mt-2"><ImLocation/><span className="font-bold">Address:</span>{location}</p>
                 
              </div>
-             <button onClick={()=>handleApply(id)} className="mt-4 py-2 w-full  rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">Apply Now</button>
+             <button onClick={()=>handleApply(id)} className="mt-4 mb-4 py-2 w-full  rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">Apply Now</button>
         </div>
       </div>
     </>

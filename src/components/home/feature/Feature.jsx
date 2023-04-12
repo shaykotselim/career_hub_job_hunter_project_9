@@ -36,7 +36,7 @@ const Feature = () => {
         ))}
       </div>
       {!displayAllJobs && (
-        <div className="text-center mt-4">
+        <div className="text-center mt-4 mb-4">
           <button className="mt-2 p-2 rounded text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500" onClick={handleViewAllData}>See All Jobs</button>
         </div>
       )}
