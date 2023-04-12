@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
+    <>
       <div className="bg-cyan-50 sm:flex items-center justify-between py-8 lg:px-36">
         <div>
           <Link to="/home">
@@ -27,7 +27,7 @@ const Header = () => {
           Start Applying
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

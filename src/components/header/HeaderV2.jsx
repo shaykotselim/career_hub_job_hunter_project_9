@@ -44,9 +44,9 @@ export default function Example() {
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography className="mr-4 cursor-pointer py-1.5 font-normal">
             <Link to="/home">
-              <p className="text-3xl font-medium bg-gradient-to-r from-blue-500 via-pink-500 to-blue-500 inline-block text-transparent bg-clip-text ">
+              <span className="text-3xl font-medium bg-gradient-to-r from-blue-500 via-pink-500 to-blue-500 inline-block text-transparent bg-clip-text ">
                 Job_Hunter
-              </p>
+              </span>
             </Link>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
@@ -98,7 +98,12 @@ export default function Example() {
         <MobileNav open={openNav}>
           <div className="container mx-auto">
             {navList}
-            <Button variant="gradient" size="sm" fullWidth className="mb-2 text-white p-2 rounded font-medium bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500">
+            <Button
+              variant="gradient"
+              size="sm"
+              fullWidth
+              className="mb-2 text-white p-2 rounded font-medium bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500"
+            >
               <span>Start Applying</span>
             </Button>
           </div>
